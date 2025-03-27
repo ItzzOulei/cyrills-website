@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercar Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="Menubutton">☰</div>
+            <ul class="Menuitems">
+                <li><a href="startseite.html">Home</a></li>
+                <li><a href="geschichte.html">Geschichte</a></li>
+                <li>
+                    <a href="marken.html">Marken</a>
+                </li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="buycar.html">Auto kaufen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="galerie">
+        <div class="header">
+            <h2 class="seitentitel">Galerie</h2>
+        </div>
+        <div class="container">
+            <div class="slide" id="img1"><h3>Bugatti Chiron</h3></div>
+            <div class="slide" id="img2"><h3>Audi R8</h3></div>
+            <div class="slide" id="img3"><h3>Ferrari488</h3></div>
+            <div class="slide" id="img4"><h3>Königsegg Agera</h3></div>
+            <div class="slide" id="img5"><h3>Lamborghini Aventador SVJ</h3></div>
+        </div>
+    </div>
+    <script src="style.js"></script>
+    <script>
+        slidesPlugin(1);
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.Menubutton');
+            const menuItems = document.querySelector('.Menuitems');
+    
+            menuButton.addEventListener('click', function() {
+                menuItems.style.display = menuItems.style.display === 'flex' ? 'none' : 'flex';
+            });
+        });
+    </script>  
+    <div class="galerie">
+        <div class="container">
+            <div class="slide" id="img6"><h3>Mclaren 765 LT</h3></div>
+            <div class="slide" id="img7"><h3>Pagani Zonda R</h3></div>
+            <div class="slide" id="img8"><h3>Porsche 911 Turbo S</h3></div>
+            <div class="slide" id="img9"><h3>Rimac Concept Two </h3></div>
+            <div class="slide" id="img10"><h3>SSC Tuatra</h3></div>
+        </div>
+    </div>
+    <script src="style.js"></script>
+    <script>
+        slidesPlugin(1);
+    </script>
+    <div class="galerie">
+        <div class="container">
+            <div class="slide" id="img11"><h3>Audi RS7</h3></div>
+            <div class="slide" id="img12"><h3>Bugatti Veyron</h3></div>
+            <div class="slide" id="img13"><h3>Ferrari Laferrari</h3></div>
+            <div class="slide" id="img14"><h3>Königsegg Jesko</h3></div>
+            <div class="slide" id="img15"><h3>Lamborghini Sian</h3></div>
+        </div>
+    </div>
+    <script src="style.js"></script>
+    <script>
+        slidesPlugin(1);
+    </script>
+    <div class="galerie">
+        <div class="container">
+            <div class="slide" id="img16"><h3>Mclaren Speedtail</h3></div>
+            <div class="slide" id="img17"><h3>Pagani Huayra</h3></div>
+            <div class="slide" id="img18"><h3>Porsche 918 Spyder</h3></div>
+            <div class="slide" id="img19"><h3>Rimac Nevera</h3></div>
+            <div class="slide" id="img20"><h3>SSC Ultimate Aero</h3></div>
+        </div>
+    </div>
+    <script src="style.js"></script>
+    <script>
+        slidesPlugin(1);
+    </script>
+</body>
+</html>

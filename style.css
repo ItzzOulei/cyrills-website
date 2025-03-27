@@ -1,0 +1,323 @@
+/* Schriftarten */
+@font-face {
+    font-family: 'PorscheFonds';
+    src: url('Administration/PorscheFonds.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PorscheFond';
+    src: url('Administration/PorscheFond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Allgemeine Einstellungen */
+body {
+    margin: 0 auto;
+    padding: 0;
+    color: #000;
+    background-color: #c0c0c0;
+    font-family: "PorscheFonds";
+}
+
+header {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Bilder */
+img {
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+/* Überschriften */
+h1 {
+    font-family: PorscheFond;
+}
+h2{
+    font-family: PorscheFond;
+}
+h3 {
+    padding-top: 50px;
+    color: white;
+    list-style: none;
+}
+h4{
+    display: flex;
+    justify-content: center;
+}
+
+/* Formular */
+.formular {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.formular button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+.input-formular {
+    padding: 10px;
+    width: 95%;
+}
+
+.formular-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Seitentitel */
+.seitentitel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PorscheFond;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-family: PorscheFonds;
+}
+
+/* Navigation */
+.Menubutton {
+    font-size: 2em;
+    color: #FFD700;
+    margin-right: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.Menuitems {
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+nav.menu {
+    align-items: center;
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    max-width: 90%;
+}
+
+nav.menu:hover .Menuitems {
+    display: flex;
+}
+
+.Menuitems li {
+    position: relative;
+    margin: 0;
+    gap: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 430px) {
+  .Menuitems li {
+      position: relative;
+      margin: 0;
+      gap: 0;
+      padding-left: 10px;
+      padding-right: 10px;  
+    max-width: 10%;
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Menuitems {
+      flex-direction: column;
+      width: 100%;
+      background-color: #000; /* Hintergrundfarbe für mobile Navigation */
+  }
+}
+
+
+.Menuitems li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 2;
+}
+
+.Menuitems li a:hover {
+    background-color: #c0c0c0;
+    color: #000000;
+}
+
+.untermenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003366;
+    z-index: 20;
+}
+
+.untermenu li a {
+    padding: 10px 15px;
+    color: white;
+    border-bottom: 1px solid #555;
+    display: block;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.untermenu li a:hover {
+    background-color: #FFD700;
+    color: black;
+    z-index: 10;
+}
+
+.Menuitems li:hover .untermenu {
+    display: block;
+}
+
+/*Marken*/
+.auto{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.auto img {
+    width: 50%;
+    height: auto;
+}
+
+/*Galerie*/
+.galerie {
+    box-sizing: border-box;
+  }
+  
+  .galerie body {
+    font-family: "Muli", sans-serif;
+    margin: 0;
+    padding: 2.5em;
+    background: rgb(126, 133, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .galerie .container {
+    width: 100%;
+    display: flex;
+    padding: 0 1vmin;
+  }
+  
+  .galerie .slide {
+    height: 60vmin;
+    border-radius: 0.2em;
+    margin: 0.2em;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .galerie .slide h3 {
+    position: absolute;
+    font-size: 0.6em;
+    bottom: 0.4em;
+    left: 0.4em;
+    margin: 0;
+    opacity: 0;
+  }
+  .galerie .slide.active {
+    flex: 10;
+  }
+  
+  .galerie .slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+  
+  /* Background Images */
+  #img1 {
+    background-image: url('images/Bugatti_Chiron.jpg');
+  }
+  #img2 {
+    background-image: url('images/Audi_R8.jpg');
+  }
+  #img3 {
+    background-image: url('images/Ferrari_488.jpg');
+  }
+  #img4 {
+    background-image: url('images/koenigsegg_agera.jpg');
+  }
+  #img5 {
+    background-image: url('images/Lambo_Av.jpg');
+  }
+  #img6 {
+    background-image: url('images/Mclaren_LT.jpg');
+  }
+  #img7 {
+    background-image: url('images/Pagani_huayra.jpg');
+  }
+  #img8 {
+    background-image: url('images/Porsche_911_Turbo_S.jpg');
+  }
+  #img9 {
+    background-image: url('images/Rimac_ct.jpg');
+  }
+  #img10 {
+    background-image: url('images/SSC_tuatra.jpg');
+  }
+  #img11 {
+    background-image: url('images/Audi_rs7.jpg');
+  }
+  #img12 {
+    background-image: url('images/Bugatti_Veyron.jpg ');
+  }
+  #img13 {
+    background-image: url('images/Ferrari_Laferrari.jpg');
+  }
+  #img14 {
+    background-image: url('images/koenigsegg_jesko.jpg');
+  }
+  #img15 {
+    background-image: url('images/Lambo_sian.jpg');
+  }
+  #img16 {
+    background-image: url('images/Mclaren_spd.jpg ');
+  }
+  #img17 {
+    background-image: url('images/Pagani_zonda.jpg');
+  }
+  #img18 {
+    background-image: url('images/Porsche_918_Spyder.jpg');
+  }
+  #img19 {
+    background-image: url('images/Rimac_Nevera.jpg');
+  }
+  #img20 {
+    background-image: url('images/ssc_ult.jpg');
+  }

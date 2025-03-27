@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercar Showroom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.Menubutton');
+            const menuItems = document.querySelector('.Menuitems');
+    
+            menuButton.addEventListener('click', function() {
+                menuItems.style.display = menuItems.style.display === 'flex' ? 'none' : 'flex';
+            });
+        });
+    </script>  
+    <header>
+        <nav class="menu">
+            <div class="Menubutton">☰</div>
+            <ul class="Menuitems">
+                <li><a href="startseite.html">Home</a></li>
+                <li><a href="geschichte.html">Geschichte</a></li>
+                <li>
+                    <a>Marken</a>
+                    <ul class="untermenu">
+                        <li><a href="marken/porsche.html">Porsche</a></li>
+                        <li><a href="marken/ferrari.html">Ferrari</a></li>
+                        <li><a href="marken/rimac.html">Rimac</a></li>
+                        <li><a href="marken/bugatti.html">Bugatti</a></li>
+                        <li><a href="marken/audi.html">Audi</a></li>
+                        <li><a href="marken/koenigsegg.html">Königsegg</a></li>
+                        <li><a href="marken/ssc.html">Shelby Supercar</a></li>
+                        <li><a href="marken/mclaren.html">McLaren</a></li>
+                        <li><a href="marken/pagani.html">Pagani</a></li>
+                        <li><a href="marken/lamborghini.html">Lamborghini</a></li>
+                    </ul>
+                </li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="buycar.html">Auto kaufen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="seitentitel">Impressum</h1>
+    <div>
+    <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+    <p>
+    <strong>Cyrill Gammeter</strong><br>
+    <strong>Engenhaldestrasse 26</strong><br>
+    <strong>3030 Bern</strong><br>
+    <strong>Schweiz</strong>
+    </p>
+
+    <p><strong>Kontakt:</strong></p>
+    <p>
+    <strong>Telefon: +41 (0)76 674 18 98</strong><br>
+    <strong>E-Mail: Cyrill.gammeter@gmail.com</strong>
+    </p>
+
+    <p><strong>Haftungsausschluss:</strong></p>
+    <p><strong>Haftung für Inhalte</strong></p>
+    <p>
+    Diese Website wurde mit größtmöglicher Sorgfalt erstellt. Als Übungsprojekt erhebt sie keinen Anspruch auf Richtigkeit, 
+    Vollständigkeit oder Aktualität der Inhalte. Haftungsansprüche werden ausgeschlossen, soweit keine vorsätzliche 
+    oder grob fahrlässige Pflichtverletzung vorliegt.
+    </p>
+
+    <p><strong>Haftung für Links</strong></p>
+    <p>
+    Diese Website enthält möglicherweise Links zu externen Webseiten Dritter. Auf deren Inhalte habe ich keinen 
+    Einfluss und übernehme daher keine Gewähr. Zum Zeitpunkt der Verlinkung waren keine rechtswidrigen Inhalte 
+    erkennbar. Bei Bekanntwerden von Rechtsverletzungen werde ich die betreffenden Links entfernen.
+    </p>
+
+    <p><strong>Urheberrecht</strong></p>
+    <p>
+    Die Inhalte dieser Website unterliegen dem schweizer Urheberrecht. Die Vervielfältigung, Bearbeitung, 
+    Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen 
+    Zustimmung des jeweiligen Autors bzw. Erstellers.
+    </p>
+    <p>Alle Bildlich Dargestellten Bilder sind gratis und lizenzfrei verfügbar. Diese wurden von den folgenden Webseiten heruntergeladen:<br/>
+       <a href="https://www.pexels.com/" target="_blank"> https://www.pexels.com/</a> , 
+       <a href="https://unsplash.com/de" target="_blank">https://unsplash.com/de </a>, 
+       <a href="https://pixabay.com/de/" target="_blank">https://pixabay.com/de/</a> , 
+       <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank">https://commons.wikimedia.org/wiki/Main_Page</a>
+    </p>
+    </div>
+</body>
+</html>

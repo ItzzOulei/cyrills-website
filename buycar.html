@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Auto kaufen</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuButton = document.querySelector('.Menubutton');
+                const menuItems = document.querySelector('.Menuitems');
+        
+                menuButton.addEventListener('click', function() {
+                    menuItems.style.display = menuItems.style.display === 'flex' ? 'none' : 'flex';
+                });
+            });
+        </script>  
+        <header>
+            <nav class="menu">
+                <div class="Menubutton">☰</div>
+                <ul class="Menuitems">
+                    <li><a href="../startseite.html">Home</a></li>
+                    <li><a href="geschichte.html">Geschichte</a></li>
+                    <li>
+                        <a>Marken</a>
+                        <ul class="untermenu">
+                            <li><a href="marken/porsche.html">Porsche</a></li>
+                            <li><a href="marken/ferrari.html">Ferrari</a></li>
+                            <li><a href="marken/rimac.html">Rimac</a></li>
+                            <li><a href="marken/bugatti.html">Bugatti</a></li>
+                            <li><a href="marken/audi.html">Audi</a></li>
+                            <li><a href="marken/koenigsegg.html">Königsegg</a></li>
+                            <li><a href="marken/ssc.html">Shelby Supercar</a></li>
+                            <li><a href="marken/mclaren.html">McLaren</a></li>
+                            <li><a href="marken/pagani.html">Pagani</a></li>
+                            <li><a href="marken/lamborghini.html">Lamborghini</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="kunde.html">Auto kaufen</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="formular-container">
+            <div class="formular">
+                <h3>Bei interesse hier Daten angeben, wir werden sie kontaktieren:</h3>
+                <form action="startseite.html">
+                    <label for="vorname">Vorname:</label>
+                    <input type="text" name="vorname" id="vorname" class="input-formular" required minlength="2" placeholder="Vorname eingeben...">
+
+                    <label for="nachname">Nachname:</label>
+                    <input type="text" name="nachname" id="nachname" class="input-formular" required minlength="3" placeholder="Nachname eingeben...">
+
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" class="input-formular" placeholder="+41 123 456 78 90" required minlength="10" maxlength="17">
+                    <label for="e-mail">E-Mail:</label>
+                    <input type="email" name="e-mail" id="e-mail" class="input-formular" required minlength="4" placeholder="E-Mail eingeben...">
+
+                    <fieldset>
+                        <legend>Für welche Marken interessierst du dich?</legend>
+                        <label><input type="checkbox" name="autos" value="porsche"> Porsche</label><br>
+                        <label><input type="checkbox" name="autos" value="ferrari"> Ferrari</label><br>
+                        <label><input type="checkbox" name="autos" value="rimac"> Rimac</label><br>
+                        <label><input type="checkbox" name="autos" value="bugatti"> Bugatti</label><br>
+                        <label><input type="checkbox" name="autos" value="audi"> Audi</label><br>
+                        <label><input type="checkbox" name="autos" value="pagani"> Pagani</label><br>
+                        <label><input type="checkbox" name="autos" value="koenigsegg"> Königsegg</label><br>
+                        <label><input type="checkbox" name="autos" value="ssc"> SSC</label><br>
+                        <label><input type="checkbox" name="autos" value="mclaren"> McLaren</label><br>
+                        <label><input type="checkbox" name="autos" value="lamborghini"> Lamborghini</label><br>
+                      </fieldset>
+
+                    <hr>
+
+                    <button type="submit">Einsenden</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

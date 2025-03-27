@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercar Showroom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.Menubutton');
+            const menuItems = document.querySelector('.Menuitems');
+    
+            menuButton.addEventListener('click', function() {
+                menuItems.style.display = menuItems.style.display === 'flex' ? 'none' : 'flex';
+            });
+        });
+    </script>  
+    <header>
+        <nav class="menu">
+            <div class="Menubutton">☰</div>
+            <ul class="Menuitems">
+                <li><a href="startseite.html">Home</a></li>
+                <li>
+                    <a>Marken</a>
+                    <ul class="untermenu">
+                        <li><a href="marken/porsche.html">Porsche</a></li>
+                        <li><a href="marken/ferrari.html">Ferrari</a></li>
+                        <li><a href="marken/rimac.html">Rimac</a></li>
+                        <li><a href="marken/bugatti.html">Bugatti</a></li>
+                        <li><a href="marken/audi.html">Audi</a></li>
+                        <li><a href="marken/koenigsegg.html">Königsegg</a></li>
+                        <li><a href="marken/ssc.html">Shelby Supercar</a></li>
+                        <li><a href="marken/mclaren.html">McLaren</a></li>
+                        <li><a href="marken/pagani.html">Pagani</a></li>
+                        <li><a href="marken/lamborghini.html">Lamborghini</a></li>
+                    </ul>
+                </li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="buycar.html">Auto kaufen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="seitentitel">Geschichte</h1>
+        <p>
+            Unser Showroom entstand aus der Leidenschaft für außergewöhnliche Fahrzeuge und dem Wunsch, eine zentrale Anlaufstelle für Autoliebhaber zu schaffen. Seit unserer Gründung haben wir es uns zur Aufgabe gemacht, eine exklusive Auswahl an Premium-Automarken unter einem Dach zu vereinen.
+
+Bei uns finden Sie nicht nur beeindruckende Fahrzeuge, sondern auch eine Umgebung, die Ihre Begeisterung für Automobile widerspiegelt. Unser Ziel ist es, Ihnen ein unvergleichliches Kauferlebnis zu bieten – von der persönlichen Beratung bis hin zur Fahrzeugübergabe.
+
+Wir laden Sie ein, in die Welt der schönsten und leistungsstärksten Automobile einzutauchen und Ihren Traumwagen in unserem Showroom zu entdecken.
+        </p>
+        <h3 class="seitentitel">Ablauf</h3>
+        <h4>2020 – Die Idee entsteht</h4>
+        <p>Der Gedanke, einen Showroom für Premiumfahrzeuge zu schaffen, entsteht aus der Begeisterung für moderne Automobilkunst</p>
+        <h4>2021 – Gründung und erste Kooperationen</h4>
+        <p>Unser Showroom öffnet seine Türen mit einer sorgfältig kuratierten Auswahl an Marken wie Porsche, Ferrari und Lamborghini.</p>
+        <img src="images/Lamborghini.jpg" alt="Lamborghini">
+        <h4>2022 – Erweiterung des Angebots</h4>
+        <p>Neue Partnerschaften mit Marken wie McLaren, Pagani und Bugatti bringen mehr Vielfalt in unsere Ausstellung.</p>
+        <img src="images/Mclaren.jpg" alt="McLaren">
+        <h4>2023 – Fokus auf Kundenservice</h4>
+        <p>Mit besonderen Events, wie Meet-and-Greets mit Markenbotschaftern, rücken wir die Wünsche unserer Kunden noch stärker in den Mittelpunkt.</p>
+        <h4>Heute</h4>
+        <p>Unser Showroom steht als Symbol für Luxus, Qualität und ein außergewöhnliches Kauferlebnis – ein Ort, an dem Automobilträume wahr werden.</p>
+    </main>
+</body>
+</html>
